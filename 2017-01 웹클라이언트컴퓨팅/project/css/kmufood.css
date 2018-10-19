@@ -1,0 +1,91 @@
+time.today {
+    display: block;
+    width: 100%;
+    margin-left: 16px;
+    margin-bottom: 64px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+ul.content-nav {
+    position: fixed;
+    top: 84px;
+    right: 3.5%;
+    width: 80px;
+    padding: 8px;
+    background: rgba(255, 255, 255, 200);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+ul.content-nav:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+ul.content-nav li {
+    padding: 4px;
+}
+
+ul.content-nav a {
+    color: black;
+    font-weight: 200;
+    text-decoration: none;
+    font-size: small;
+}
+
+ul.content-nav a:hover {
+    font-weight: 700;
+}
+
+article {
+    margin: 16px 0;
+}
+
+table.restaurant-menu {
+    display: table;
+    width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+    text-align: center;
+    line-height: 1.5;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 16px 64px 64px 16px;
+    background: white;
+}
+
+table.restaurant-menu caption {
+    color: #fff;
+    width: 30%;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 16px;
+    padding: 8px;
+    margin-right: 64px;
+    background-color: #696969;
+}
+
+table.restaurant-menu thead th {
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    background-color: #696969;
+    color: #fff;
+}
+
+table.restaurant-menu tbody td {
+    padding: 10px;
+    font-weight: normal;
+    color: black;
+}
+
+table.restaurant-menu tbody tr {
+    background-color: #fff;
+}
+
+table.restaurant-menu tbody tr:hover {
+    background-color: #eeeeee;
+}

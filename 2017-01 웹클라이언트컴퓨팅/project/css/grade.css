@@ -1,0 +1,57 @@
+@keyframes pie-spin {
+    to {
+        transform: rotate(72deg);
+    }
+}
+
+.gpa-pie {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    background: lightskyblue linear-gradient(to right, transparent 50%, #fff 0);
+}
+
+.gpa-pie::before {
+    content: '';
+    display: block;
+    margin-left: 64px;
+    height: 128px;
+    border-radius: 0 100% 100% 0 / 50%;
+    background-color: inherit;
+    transform-origin: left;
+    animation: pie-spin 1.5s;
+    animation-fill-mode: forwards;
+}
+
+table.score {
+    display: table;
+    width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1.5;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+table.score thead th {
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    background-color: #696969;
+    color: #fff;
+}
+
+table.score tbody td {
+    padding: 10px;
+    font-weight: normal;
+    color: black;
+}
+
+table.score tbody tr {
+    background-color: #fff;
+}
+
+table.score tbody tr:hover {
+    background-color: #eeeeee;
+}

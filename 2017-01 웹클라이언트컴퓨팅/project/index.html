@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="application-name" content="KMULife Prev.">
+    <meta name="description" content="Preview version of KMULife">
+    <meta name="keywords" content="KMULife,kmu,Kookmin">
+    <meta name="author" content="Dongeon Kim">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>KMULife Prev.</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <a class="logo" title="logo" href="#!"><h1>KMULife</h1></a>
+
+    <nav>
+        <a class="active" href="#">공지사항</a>
+        <a href="kmufood.html">국민밥</a>
+        <a href="#!">성적관리</a>
+        <a href="#!">로그아웃</a>
+    </nav>
+</header>
+<section class="main">
+
+    <h2 class="section-title">| 공지사항</h2>
+
+    <div class="search-box" id="SBox">
+        <input id="search-form" placeholder="Search..." type="text">
+        <div class="toggle search-link" id="search-submit"></div>
+        <div id="search-cancel" class="fa fa-ban toggle cancel"></div>
+    </div>
+
+    <button onclick="gotoTop()" id="topBtn" title="Go Top">⌃</button>
+
+    <article id="notice-list"></article>
+
+    <div id="message-box" class="message-box">불러오는 중</div>
+
+    <div id="loader" class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+
+
+</section>
+<footer>
+
+</footer>
+
+<script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>
